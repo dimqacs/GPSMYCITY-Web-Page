@@ -19,11 +19,15 @@
     --lightgrey: #F8F8F8;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     width: 0;
 }
 
-#logo {
+#logo a{
     color: var(--orange);
     font-weight: 700;
     font-size: 36px;
@@ -31,7 +35,7 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-h1 span {
+#logo span {
     font-weight: 400;
     color: black;
 }
@@ -41,6 +45,10 @@ img[alt="CastleImage"] {
     height: 1000px;
     filter: brightness(85%);
     z-index: -1;
+}
+
+.menu-ul a {
+    color: black;
 }
 
 .menu-ul,
@@ -78,9 +86,13 @@ header {
 #login {
     border-bottom: 3px solid var(--orange);
     font-family: 'Poppins', sans-serif;
-    font-weight: normal;
     margin-right: 45px;
     transition: border-color 0.3s ease;
+}
+
+#login a{
+    font-weight: normal;
+    color: black;
 }
 
 #login:hover {
@@ -162,16 +174,18 @@ input::placeholder {
 }
 
 .find-place {
-    font-weight: 400;
     border-radius: 40px;
     background-color: var(--orange);
     width: 265px;
     height: 66px;
-    text-align: center;
+    font-weight: 400;
     font-size: 32px;
     line-height: 200%;
+    text-align: center;
     user-select: none;
     cursor: pointer;
+    border: none;
+    color: white;
 }
 
 .popular,
@@ -575,4 +589,8 @@ hr {
 
 a {
     text-decoration: none;
+}
+
+#popular, #custom-walk, #signup{
+    scroll-margin-top: 30px;
 }

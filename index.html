@@ -10,16 +10,17 @@
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
-        <h1 id="logo">GPS<span>MYCITY</span></h1>
+        <h1 id="logo"><a href="#top">GPS<span>MYCITY</span></a></h1>
         <nav>
             <ul class="menu-ul">
-                <li>ALL CITIES</li>
-                <li>CREATE YOUR OWN WALK</li>
-                <li>TUTORIALS</li>
+                <li><a href="#popular">ALL CITIES</a></li>
+                <li><a href="#custom-walk">CREATE YOUR OWN WALK</a></li>
+                <li><a href="">TUTORIALS</a></li>
             </ul>
         </nav>
-        <h4 id="login">LOG IN</h4>
+        <h4 id="login"><a href="#signup">LOG IN</a></h4>
     </header>
     <main>
         <div class="main">
@@ -30,9 +31,11 @@
                 <span id="get">Get exclusive walking tours anywhere you are, <br>
                     just type your city and get your tour for free.</span>
                 <div class="search-bar">
-                    <img src="resources/location.png" alt="location-png-logo">
-                    <input type="text" id="search-bar-input" placeholder="Enter your city">
-                    <div class="find-place">FIND PLACE</div>
+                    <form>
+                        <img src="resources/location.png" alt="location-png-logo">
+                        <input type="text" id="search-bar-input" placeholder="Enter your city" name="city">
+                        <button type="submit" class="find-place">FIND PLACE</button>
+                    </form>
                 </div>
                 <span id="thanks">No thanks, I like boring holidays.</span>
             </div>
@@ -110,6 +113,7 @@
                 </div>
             </div>
         </div>
+        <div id="signup"></div>
         <div class="signup">
             <div class="signup-content">
                 <h1>Sign up <span id="and">&</span> Save</h1>
@@ -123,6 +127,7 @@
             </div>
             <img src="resources/phone.png" alt="Phone">
         </div>
+        <div id="popular"></div>
         <div class="most-popular">
             <h2>The Most Popular Cities</h2>
             <div class="container">
@@ -148,6 +153,7 @@
                 </div>
             </div>
         </div>
+        <div id="custom-walk" class="scroll-container"></div>
         <div class="custom-walk">
             <h2 id="Custom">Custom Walk</h2>
             <p>Create Your Own Walikng Tour</p>
@@ -178,28 +184,32 @@
     <footer>
         <div class="menu">
             <hr>
-                <ul class="menu-ul">
-                    <li>ABOUT</li>
-                    <li>ALL CITIES</li>
-                    <li>CREATE YOUR OWN WALK</li>
-                    <li>TUTORIALS</li>
-                    <li>CONTACT</li>
-                </ul>
+            <ul class="menu-ul">
+                <li>ABOUT</li>
+                <li><a href="#popular">ALL CITIES</a></li>
+                <li><a href="#custom-walk">CREATE YOUR OWN WALK</a></li>
+                <li>TUTORIALS</li>
+                <li>CONTACT</li>
+            </ul>
             <hr>
         </div>
         <div class="sup">
             <div class="paragraph">
-                Self-guided walking tours apps on iOS and Android for exploring <br> 
+                Self-guided walking tours apps on iOS and Android for exploring <br>
                 cities on foot - they make bus tours obsolete!
             </div>
             <div class="last">
-                <h1 id="logo">GPS<span>MYCITY</span></h1>
+                <h1 id="logo"><a href="#top">GPS<span>MYCITY</span></a></h1>
                 <h4>© 2023 GPSMYCITY Inc. All Rights Reserved.</h4>
                 <div class="links">
-                    <a href="https://apps.apple.com/us/app/gpsmycity-walks-in-1k-cities/id417207307" target="_blank"><img src="resources/apple.png" alt="App Store"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.gpsmycity.iwtmaster&hl=en&referrer=utm_source%3Dwebsite" target="_blank"><img src="resources/android.png" alt="Google Play">
-                    <a href="https://www.facebook.com/gpsmycity/" target="_blank"><img src="resources/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.pinterest.com/gpsmycity/" target="_blank"><img src="resources/pinterest.png" alt="Pinterest"></a>
+                    <a href="https://apps.apple.com/us/app/gpsmycity-walks-in-1k-cities/id417207307"
+                        target="_blank"><img src="resources/apple.png" alt="App Store"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gpsmycity.iwtmaster&hl=en&referrer=utm_source%3Dwebsite"
+                        target="_blank"><img src="resources/android.png" alt="Google Play">
+                        <a href="https://www.facebook.com/gpsmycity/" target="_blank"><img src="resources/facebook.png"
+                                alt="Facebook"></a>
+                        <a href="https://www.pinterest.com/gpsmycity/" target="_blank"><img
+                                src="resources/pinterest.png" alt="Pinterest"></a>
                 </div>
             </div>
         </div>
