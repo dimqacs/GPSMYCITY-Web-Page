@@ -42,7 +42,6 @@ body::-webkit-scrollbar {
 
 img[alt="CastleImage"] {
     width: 100%;
-    height: 1000px;
     filter: brightness(85%);
     z-index: -1;
 }
@@ -198,7 +197,8 @@ input::placeholder {
 .cards {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 65px;
 }
 
 h2 {
@@ -309,14 +309,11 @@ h2 {
     align-items: center;
 }
 
-.adventure button {
-    width: 29px;
-    height: 24px;
+.adventure a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 15px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
 }
 
 .most-popular {
@@ -552,6 +549,7 @@ hr {
 }
 
 .sup {
+    width: 100%;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -594,3 +592,89 @@ a {
 #popular, #custom-walk, #signup{
     scroll-margin-top: 30px;
 }
+
+.hmb-menu{ 
+    height: 30px;
+    margin-right: 45px;
+    display: none;
+}
+
+#burger {
+    display: none;
+}
+
+.show-menu{
+    display: none;
+    position: absolute;
+    margin-left: -215px;
+    background-color: var(--grey);
+    border: none;
+    transition: max-height 0.3s ease;
+}
+
+.show-menu ul {
+    list-style: none;
+    text-align: right;
+}
+
+label[for="burger"] {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+
+.show-menu ul li {
+    padding: 5px;
+}
+.show-menu ul li a{
+    color: var(--lightgrey);  
+    padding: 0 5px;
+}
+
+.show-menu ul li:hover a{
+    color: var(--orange) !important;
+}
+
+#burger:checked + label[for="burger"] ~ .show-menu {
+    display: block;
+}
+
+@media screen and (max-width: 430px) {
+
+    nav , header h4{
+        display: none;
+    }
+
+    img[alt="CastleImage"] {
+        width: 430px;
+        height: 100vh;
+        object-fit: cover;
+        
+    }
+
+    .hmb-menu  {
+        display: block;
+    }
+
+    .hmb-menu img {
+        width: 30px;
+    }
+
+    /* .steps {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .steps .step {
+        margin-bottom: 100px;
+    }
+
+    footer .menu {
+        display: none;
+    }
+
+    .last {
+        margin: 0;
+    } */
+  }

@@ -4,20 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPSMYCITY Walking Tours</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="resources/pageIcon.png" type="image/x-icon">
+    <title>GPSMYCITY Walking Tours</title>
 </head>
 
 <body>
     <div id="top"></div>
     <header>
         <h1 id="logo"><a href="#top">GPS<span>MYCITY</span></a></h1>
+        <div class="hmb-menu">
+            <input type="checkbox" id="burger">
+            <label for="burger"></label>
+            <img src="resources/more.png" alt="More Icon">
+            <div class="show-menu">
+                <ul title="MENU">
+                    <li><a href="#popular">ALL CITIES</a></li>
+                    <li><a href="#custom-walk">CREATE OWN WALK</a></li>
+                    <li><a href="errors/404.html">TUTORIALS</a></li>
+                    <li><a href="#signup">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
         <nav>
             <ul class="menu-ul">
                 <li><a href="#popular">ALL CITIES</a></li>
                 <li><a href="#custom-walk">CREATE YOUR OWN WALK</a></li>
-                <li><a href="">TUTORIALS</a></li>
+                <li><a href="errors/404.html">TUTORIALS</a></li>
             </ul>
         </nav>
         <h4 id="login"><a href="#signup">LOG IN</a></h4>
@@ -31,8 +44,8 @@
                 <span id="get">Get exclusive walking tours anywhere you are, <br>
                     just type your city and get your tour for free.</span>
                 <div class="search-bar">
+                    <img src="resources/location.png" alt="location-png-logo">
                     <form>
-                        <img src="resources/location.png" alt="location-png-logo">
                         <input type="text" id="search-bar-input" placeholder="Enter your city" name="city">
                         <button type="submit" class="find-place">FIND PLACE</button>
                     </form>
@@ -122,7 +135,7 @@
                 most famous <span>cities</span>
                 <div class="adventure">
                     <h3>Sign up and never miss another adventure</h3>
-                    <button><img src="resources/Arrow.png" alt="Arrow"></button>
+                    <a href="errors/404.html"><img src="resources/Arrow.png" alt="Arrow"></a>
                 </div>
             </div>
             <img src="resources/phone.png" alt="Phone">
@@ -185,11 +198,11 @@
         <div class="menu">
             <hr>
             <ul class="menu-ul">
-                <li>ABOUT</li>
+                <li><a href="errors/404.html">ABOUT</a></li>
                 <li><a href="#popular">ALL CITIES</a></li>
                 <li><a href="#custom-walk">CREATE YOUR OWN WALK</a></li>
-                <li>TUTORIALS</li>
-                <li>CONTACT</li>
+                <li><a href="errors/404.html">TUTORIALS</a></li>
+                <li><a href="errors/404.html">CONTACT</a></li>
             </ul>
             <hr>
         </div>
