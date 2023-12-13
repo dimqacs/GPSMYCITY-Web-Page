@@ -31,7 +31,7 @@ body {
     overflow-x: hidden;
 }
 
-#logo a{
+#logo a, #logo1 a{
     color: var(--orange);
     font-weight: 700;
     font-size: 36px;
@@ -39,7 +39,7 @@ body {
     cursor: pointer;
 }
 
-#logo span {
+#logo span, #logo1 span{
     font-weight: 400;
     color: black;
 }
@@ -278,7 +278,7 @@ h2 {
 }
 
 .signup {
-    background-image: url("resources/singUp.png");
+    background-image: url("resources/signup.png");
     height: 1000px;
     display: flex;
     flex-direction: row;
@@ -470,6 +470,7 @@ h2 {
 }
 
 label {
+    height: 31px;
     display: block;
     cursor: pointer;
     margin: 0;
@@ -743,7 +744,7 @@ label[for="burger"] {
     }
 
     .signup {
-        height: 900px;
+        height: 935px;
         text-align: center;
         align-items: start;
     }
@@ -771,11 +772,122 @@ label[for="burger"] {
         margin-top: 20px;
     }
 
+    .most-popular {
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "amsterdam"
+            "istanbul"
+            "london"
+            "rome"
+            "all_cities";
+    }
+
+    .element, .element-centered, #Amsterdam, #Istanbul{
+        width: 400px;
+        height: 500px;
+    }
+
+    .element {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #Amsterdam p, #Istanbul p{
+        position: relative;
+        top: -12%;
+        margin-left: 0;
+    }
+
+    #Amsterdam span, #Istanbul span{
+        position: relative;
+        top: 12%;
+        margin-left: 0;
+    }
+
+    .custom-walk {
+        width: 100%;
+        height: 500px;
+        background-image: url("resources/Custom Walk 430px.png");
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .custom-walk p {
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    .choose {
+        width: 140px;
+        margin: 0 10px 0 -10px;
+    }
+
+    .specify {
+        width: 400px;
+        justify-content: center;
+    }
+
+    .specify span {
+        width: 200px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-left: -20px;
+   }
+
+    label {
+        font-size: 18px;
+        width: 140px;
+    }
+    
+    .variants {
+        width: 140px;
+    }
+
+    .variants ul li {
+        width: 116px;
+        font-size: 15px;
+    }
+
+    .variants ul {
+        max-height: 108px;
+    }
+
+    .sup {
+        margin: 0;
+        height: 420px;
+    }
+
     footer .menu {
         display: none;
     }
 
     .last {
         margin: 0;
+        flex-direction: column;
+        text-align: center;
     }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .last h1 {
+        margin: 20px 0;
+    }
+
+    #logo1 a {
+        margin: 0;
+    }
+
+    .last h4 {
+        margin: 10px 0;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
   }

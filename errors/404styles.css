@@ -10,9 +10,15 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main {
-    width: 1920px;
-    height: 950px;
+    width: max-content;
+    height: max-content;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -55,4 +61,19 @@ a {
 a:hover {
     background-color: white;
     color: #012157;
+}
+
+@media screen and (max-width: 430px) {
+
+    h1 {
+        font-size: 110px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        height: 50px;
+    }
 }
